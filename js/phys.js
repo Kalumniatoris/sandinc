@@ -87,8 +87,8 @@ function updateMap(){
 
                     if(res!=0&&res!=undefined){
                       //  p("res:"+res)
-                        map[x][y]=0;
-                        map[x-1][y+1]=res;
+                        map[x][y]=res;
+                        map[x-1][y+1]=0;
                     }
 
                 }
@@ -98,7 +98,7 @@ function updateMap(){
                     if(res!=undefined){
                       //  p(res)
                         map[x][y]=0;
-                        map[x+1][y+1]=res+1;
+                        map[x+1][y+1]=res;
                     }
 
                 }
