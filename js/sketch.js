@@ -12,7 +12,7 @@ cb=createGraphics(size,size);
 
   
 //generators.push({x:20,y:10,c:1,to:100})
-tphys=setInterval(doPhys,100);
+tphys=setInterval(doPhys,30);
 
 //createGenerator(168,15,2,350)
 }

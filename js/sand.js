@@ -73,8 +73,8 @@ function checkCombo(a, b) {
     if (a == b) return;
     //p("00")
     //p(a,b)
-    na = sands[a - 1].name;
-    nb = sands[b - 1].name;
+    na = sands[a].name;
+    nb = sands[b].name;
 
     for (i in combos) {
         s = combos[i]
