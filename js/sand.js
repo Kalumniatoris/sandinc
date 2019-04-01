@@ -26,6 +26,8 @@ window.onload = function () {
     sands.push(new Sand("br", color(200, 110, 220), 15))
 
     combos.push(new Combo("basic", "red", "br"));
+    combos.push(new Combo("br", "red", "br"));
+
 
 
     generators.push(new Generator(20, 10, getIdByName("basic"), 100))
