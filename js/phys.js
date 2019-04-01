@@ -65,10 +65,10 @@ function updateMap(){
                     map[x][y+1]=map[x][y];
                     map[x][y]=0;
                 }else if(map[x-1][y+1]==0){
-                    map[x-1][y+=1]=map[x][y];
+                    map[x-1][y+1]=map[x][y];
                     map[x][y]=0;
                 } else if(map[x+1][y+1]==0){
-                    map[x+1][y+=1]=map[x][y];
+                    map[x+1][y+1]=map[x][y];
                     map[x][y]=0;
                 }
 
