@@ -18,8 +18,16 @@ noLoop();
 }
 
 var drawTO=100;
-var graphicsLoop=setInterval(draw,60/3)
+var graphicsLoop=setInterval(draw,60/2)
+function changeDrawInt(ms){
+    clearInterval(graphicsLoop);
+graphicsLoop=setInterval(draw,ms);
+}
 
+function changePhysInt(ms){
+    clearInterval(tphys);
+    tphys=setInterval(doPhys,ms);
+}
 function draw() {
   // put drawing code here
 drawBoard();
