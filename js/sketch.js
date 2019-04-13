@@ -37,21 +37,22 @@ function doPhys(){
 
 }
 
-
+var toDraw=-1;
+var pSize=1;
 
 function mouseDragged(){
+
+ 
     //console.log(map)
-    if(mouseX<size){
-    map[mouseX][mouseY]=-1;
-    map[mouseX-1][mouseY]=-1;
-    map[mouseX][mouseY-1]=-1;
-    map[mouseX+1][mouseY]=-1;
-    map[mouseX][mouseY+1]=-1;
-    map[mouseX+1][mouseY+1]=-1;
-    map[mouseX-1][mouseY-1]=-1;
-    map[mouseX-1][mouseY+1]=-1;
-    map[mouseX+1][mouseY-1]=-1;
+   
+    for(var tx=-pSize;tx<pSize;tx+=1){
+        for(var ty=-pSize;ty<pSize;ty+=1){
+            if(tx>=0&&tx<size&&ty>=0&&ty<size){
+            map[mouseX+tx][mouseY+ty]=toDraw;
+            }
+        }
     }
+    
 }
 
 
