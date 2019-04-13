@@ -22,13 +22,13 @@ function clearMap(){
 //         for(var y=size-2;y>0;y-=1){
 //             if(map[x][y] instanceof Sand){
 //                 if(map[x][y+1]==0){
-//                     map[x][y+=1]=map[x][y];
+//                     map[x][y+1]=map[x][y];
 //                     map[x][y]=0;
 //                 }else  if(map[x-1][y+1]==0){
-//                     map[x-1][y+=1]=map[x][y];
+//                     map[x-1][y+1]=map[x][y];
 //                     map[x][y]=0;
 //                 } else  if(map[x+1][y+1]==0){
-//                     map[x+1][y+=1]=map[x][y];
+//                     map[x+1][y+1]=map[x][y];
 //                     map[x][y]=0;
 //                 }
 

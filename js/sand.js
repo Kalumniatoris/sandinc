@@ -94,6 +94,29 @@ function checkCombo(a, b) {
     return 0;
 }
 
+class Drain{
+    constructor(x,y,range,t){
+        this.x=x;
+        this.y=y;
+        this.range=range;
+        this.t=t;
+        this.drain=setInterval(this.drain,this.t,this.x,this.y,this.range);
+    }
+
+    drain(x,y,range){
+        for(var xx=x-range;xx<x+range;xx+=1){
+            for(var yy=y-range;yy<y+range;yy+=1){
+                map[xx][yy]=0;
+            }
+        }
+
+    }
+
+    stop(){
+        clearInterval(this.drain);
+    }
+}
+
 function getIdByName(name) {
     for (var i = 0; i < sands.length; i += 1) {
         if (sands[i].name == name) {
